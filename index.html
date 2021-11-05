@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>My test page</title>
+  </head>
+  <body>
+    <p>This is my page</p>
+
+    <!-- This element formally defines a form. -->
+    <form action="/my-handling-form-page" method="post">
+     <ul>
+       <li>
+         <!-- look at the "for" name and the "id" name 
+         this is how you associate a form control with its label.-->
+         <label for="name"> Name:</label>
+         <input type="text" id="name" name="user_name">
+       </li>
+       <li>
+         <label for="main"> E-mail:</label>
+         <input type="email" id="mail" name="user_email">
+       </li>
+       <li>
+         <label for="msg">Message:</label>
+         <textarea id="msg" name="user_message"></textarea>
+       </li>
+       <li class="button">
+         <button type="submit">Send your message</button>
+       </li>
+     </ul>
+    </form>
+    <!-- The action attribute defines the location (URL)  where the form's 
+      collected data should be sent when it is submitted. -->
+
+    <!-- The method attribute defines which HTTP method to 
+    send the data with (usually get or post -->
+
+    <!-- click on a submit button (the default value) sends the form's data to 
+      the web page defined by the action attribute of the <form> element. -->
+  </body>
+</html>
