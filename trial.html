@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="payment-form.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <section>
+      <h2>Thing information</h2>
+      <fieldset>
+        <legend>Things</legend>
+      <ul>
+        <li>
+          <label for="thing_1"> 
+            <input type="radio" name="thing" id="thing_1" value="1">
+            Thing 1
+          </label>
+        </li>
+        <li>
+          <label for="thing_2"> 
+            <input type="radio" name="thing" id="thing_2" value="2">
+            Thing 2
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <p>
+      <label for="name">
+        <span>Name: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" id="name" name="username">
+    </p>
+    <p>
+      <label for="email">
+        <span>E-mail: </span>
+        <strong><abbr title="required">*</abbr></strong>
+
+      </label>
+      <input type="email" id="email" name="usermail">
+    </p>
+    <p>
+      <label for="pwd">
+        <span>Password: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="password" id="pwd" name="password">
+    </p>
+    <section>
+      <p>
+        <button type="submit">Validate the payment</button>
+      </p>
+  </section>
+    </section>
+    
+  </form>
+</body>
+</html>
